@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+<%- include _header %>
+<h1>Bienvenid@s a la guarida zombie! <img src="/hi_zombie.gif" alt="" id="hi_gif" class="circle"></h1>
+
+<% zombie.forEach((zombie) => {%>
+    <div class="index-area">
+    <ul class="collection">
+        <li class="collection-item avatar">
+            <img src="/user_icon.png" alt="" id="user_icon" class="circle">
+            <span class="title"><a href="/zombie/<%=zombie.username %>">
+            <div class="href_text">
+                <%= zombie.username %>
+            </div>
+            </a></span>
+            <p><% if(zombie.bio) { %>
+                <%= zombie.bio %>
+                <% } %></p>
+        </li>
+    </ul>
+    </div>
+    <% }) %>
+
+<%- include _footer %>
+=======
+<% include header %>
+<main><h1>Zombies</h1>
+<div id="card" class="row">
+<div class="col s12 m6">
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span class="card-title">Zombie Card</span>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+    <div class="card-action">
+      <a href="#">This is a link to nowhere</a>
+      <a href="#">This is other link to nowhere</a>
+    </div>
+  </div>
+</div>
+</div></main>
+<% include footer %>
+>>>>>>> 6fd834a8e92e81da3b07a99b91f3fc154b5bfc92
