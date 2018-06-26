@@ -1,0 +1,8 @@
+{
+    "editor.tokenColorCustomizations": {
+        "[Dracula]": {
+            "strings": "#a48ab6",
+            "variables": "#c23765"        
+        }
+    },
+}
